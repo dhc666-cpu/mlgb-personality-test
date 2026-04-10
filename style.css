@@ -35,8 +35,34 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #666;
+}
+
+/* 版本选择器 */
+.version-selector {
+    margin-bottom: 30px;
+}
+
+.version-selector label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-right: 10px;
+}
+
+.version-selector select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.version-selector select:hover {
+    border-color: #4ecdc4;
+    background: #f0f8f8;
 }
 
 button {
@@ -247,6 +273,17 @@ button:disabled {
         width: 150px;
         height: 150px;
         font-size: 3rem;
+    }
+
+    .version-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .version-selector label {
+        margin-right: 0;
     }
 }
 
