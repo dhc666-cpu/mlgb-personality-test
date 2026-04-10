@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLGB人格测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="welcome">
+        <h1>MLGB人格测试</h1>
+        <p>探索你的独特人格类型</p>
+        <button id="start-test">开始测试</button>
+        <div class="author">作者: dhc大帅逼</div>
+    </div>
+
+    <div class="container" id="test" style="display: none;">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <h2 id="question-number">问题 1/50</h2>
+        <p id="question-text">你更喜欢哪种方式度过周末？</p>
+        <div class="options" id="options">
+            <!-- 选项将通过JavaScript动态生成 -->
+        </div>
+        <div class="navigation">
+            <button id="prev-btn" disabled>上一题</button>
+            <button id="next-btn">下一题</button>
+        </div>
+    </div>
+
+    <div class="container" id="result" style="display: none;">
+        <h1>你的MLGB人格类型</h1>
+        <div class="result-card">
+            <h2 id="personality-name">测试中...</h2>
+            <div class="personality-image" id="personality-image"></div>
+            <div class="scores">
+                <h3>维度评分</h3>
+                <div class="score-item">
+                    <span>疯狂指数</span>
+                    <div class="score-bar">
+                        <div class="score-fill" id="crazy-score"></div>
+                    </div>
+                    <span id="crazy-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span>猎奇指数</span>
+                    <div class="score-bar">
+                        <div class="score-fill" id="weird-score"></div>
+                    </div>
+                    <span id="weird-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span>装逼指数</span>
+                    <div class="score-bar">
+                        <div class="score-fill" id="pretend-score"></div>
+                    </div>
+                    <span id="pretend-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span>搞怪指数</span>
+                    <div class="score-bar">
+                        <div class="score-fill" id="funny-score"></div>
+                    </div>
+                    <span id="funny-value">0</span>
+                </div>
+            </div>
+            <div class="description" id="personality-description">
+                <!-- 人格描述将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        <button id="restart-test">重新测试</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
