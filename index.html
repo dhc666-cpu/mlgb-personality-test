@@ -10,6 +10,14 @@
     <div class="container" id="welcome">
         <h1>MLGB人格测试</h1>
         <p>探索你的独特人格类型</p>
+        <div class="version-selector">
+            <label for="version-selector">选择测试版本：</label>
+            <select id="version-selector">
+                <option value="25">25题（快速版）</option>
+                <option value="44">44题（标准版）</option>
+                <option value="66">66题（详细版）</option>
+            </select>
+        </div>
         <button id="start-test">开始测试</button>
         <div class="author">作者: dhc大帅逼</div>
     </div>
@@ -18,14 +26,14 @@
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>
-        <h2 id="question-number">问题 1/50</h2>
+        <h2 id="question-number">问题 1/25</h2>
         <p id="question-text">你更喜欢哪种方式度过周末？</p>
         <div class="options" id="options">
             <!-- 选项将通过JavaScript动态生成 -->
         </div>
         <div class="navigation">
             <button id="prev-btn" disabled>上一题</button>
-            <button id="next-btn">下一题</button>
+            <button id="next-btn" disabled>下一题</button>
         </div>
     </div>
 
